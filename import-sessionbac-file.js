@@ -142,6 +142,11 @@ function parseNumber(value) {
   return Number.isFinite(number) ? number : null;
 }
 
+function parseInteger(value) {
+  const number = parseNumber(value);
+  return number === null ? null : Math.trunc(number);
+}
+
 function parseDate(value) {
   if (value === null || value === undefined || value === '') return null;
   if (value instanceof Date) return value;
@@ -184,7 +189,7 @@ function mapRow(row, index) {
     moyenne: parseNumber(getValue(row, 'moyenne')),
     decision: cleanString(getValue(row, 'decision')),
     LMATF: cleanString(getValue(row, 'LMATF')),
-    coeficient: parseNumber(getValue(row, 'coeficient')),
+    coeficient: parseInteger(getValue(row, 'coeficient')),
     Maxinote: parseNumber(getValue(row, 'Maxinote')),
     Noteecrite: parseNumber(getValue(row, 'Noteecrite')),
     noteS1: parseNumber(getValue(row, 'noteS1')),

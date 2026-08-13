@@ -9,7 +9,7 @@ module.exports = {
   },
   mongo: {
     uri: 'mongodb://root:meimid@10.1.241.178:27017/concours?authSource=admin'
-    // uri: 'mongodb://root:meimid@10.1.230.13:27017/concours?authSource=admin'
-    // uri: 'mongodb://root:meimid@10.1.230.207:27017/concours?authSource=admin'
+     //uri: 'mongodb://root:meimid@10.1.230.13:27017/concours?authSource=admin'
+     //uri: 'mongodb://root:meimid@10.1.230.207:27017/concours?authSource=admin'
   }
 };

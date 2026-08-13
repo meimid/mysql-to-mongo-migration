@@ -11,10 +11,11 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "csvtojson": "^2.0.14",
+    "json2csv": "6.0.0-alpha.2",
     "mongoose": "^8.16.1",
     "mysql2": "^3.14.1",
     "sequelize": "^6.37.7",
-    "json2csv": "6.0.0-alpha.2",
-    "csvtojson": "^3.0.0"
+    "xlsx": "^0.18.5"
   }
 }
